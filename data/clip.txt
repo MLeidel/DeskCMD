@@ -1,0 +1,12 @@
+Clips
+
+To save text in Clipboard:
+    Type sc into the entry box and hit Enter
+    or click ■, or just click ■ if entry box
+    is empty.
+
+Clipboard contents are written here when some text is in the clipboard and
+the user clicks the action button ■.
+
+The text is appended to any other text in the file.
+--------------------------------------------------

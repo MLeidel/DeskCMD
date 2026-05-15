@@ -1,0 +1,121 @@
+Quick Ref for DeskCMD
+===================
+DeskCMD is a GUI-Text-Command-window
+for launching Internet searches,
+clipboard archiving and retrieval,
+and custom system command aliasing.
+
+------------------------------------
+ ■ = action button
+
+Searches:
+	Type in a search request and hit Enter
+
+Save a URL:
+    Type, paste, or drag & drop the URL into
+    the entry box and hit Enter or click ■
+
+Save text in Clipboard:
+    Type sc into the entry box and hit Enter
+    or click ■, or just click ■ if entry box
+    is empty.
+
+Other Commands:
+	x     exit the program
+	T     start the date/time display
+	es    edit serv.txt
+	eh    edit hist.txt
+	ec    edit clip.txt
+	eu    edit urls.txt
+	ee    edit editor.txt
+	eq    edit search.txt
+	help  edit help.txt (this file)
+	list  dialog box listing saved urls
+	hist  dialog box listing save search texts
+	serv  dialog box listing your commands serv.txt
+	cap   toggle the window caption bar
+	top   toggle the window level
+	winset   save current window size and position in winmet.txt
+
+   Up & Down arrow keys scroll through last 10 commands
+   Esc key clears entry field and stops time display
+
+
+Submit multiple commands or searches delimited with "|"
+
+Execute apps installed in system path or URL with "$appname"
+where $ can be $, or > e.g. $https://example.com
+or	>gedit
+
+Evaluate math expressions using a leading "="...
+    =3^5 / 2.5
+
+Evaluate date calculation using a leading "%"...
+    % +1 year + 2 months + 2 days
+    % +200 days
+    % 2021-04-01 + 100 days
+
+Fine Window Positioning using a leading @
+    @height:-3
+    @top:14
+These pixel values are added or subtracted
+from the current position values. See 'cap' command.
+
+Create aliases for favorite commands in serv.txt file:
+
+	news,	https://microsoftnews.msn.com &
+	reboot,reboot
+	htop,	sakura -t "htop" -c 150 -r 45 -x htop &
+
+
+Querystring specific URL requests -
+    Create URL (service) alias in serv.txt ("L:" + query...)
+
+	Some examples might be:
+	m,Google Maps,https://www.google.com/maps/search/
+    p,Php,http://php.net/manual-lookup.php?pattern=
+	a,Amazon,https://smile.amazon.com/s/ref=nb_sb_noss_1?field-keywords=
+	u,URL,https://
+
+    Note: Text from the Entry field is appended to the end of
+	the querystring:
+
+	m:Madison Wisconsin
+	p:setcookie
+	a:mini computers
+	u:example.com
+
+
+Files at ~/.config/deskcmd/data
+
+    clip.txt    holds all saved clipboard text (commands: sc, ec)
+    editor.txt  holds the name of your editor
+    search.txt  holds the search query engine URL
+    help.txt    this file
+    hist.txt    holds search history
+    serv.txt    holds user alias commands and targeted search urls
+    urls.txt    holds saved urls
+    winmet.txt  holds window metrics
+
+SEARCH ENGINE
+
+DeskCMD's default search engine is set to DDG.
+Edit "search.txt" (ee command) to change it to
+some other URL such as:
+    https://www.google.com/search?q=
+	https://search.brave.com/search?q=
+    https://duckduckgo.com/?q=
+    https://www.bing.com/search?q=
+    https://scholar.google.com/scholar?q=
+    https://search.yahoo.com/search?p=
+
+
+TO USE descq IN A SHELL
+	Make sure descq is in the system path
+	Only commands in the serv.txt file
+	and Internet searches will work from
+	the command line.
+	Type "descq list" to print the serv.txt
+	file to console.
+
+END

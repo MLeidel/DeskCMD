@@ -1,0 +1,14 @@
+Aurora Audio Files <=> https://aurora.example.com/notebook/abcd1234/audio
+Borealis Notebook Sync <=> https://borealis.example.com/notebook/efgh5678/audio
+Gemini-API Documentation <=> https://github.com/fakeuser/Gemini-API/blob/main/README.md
+Zephyr Markdown Guide <=> https://zephyr.example.com/docs/markdown-guide
+Nimbus Fail2ban Help <=> https://nimbus.example.com/search?q=how+to+stop+fail2ban
+Celestial Python Scripts <=> https://celestial.example.com/scripts/python
+Orbit Update Log <=> https://orbit.example.com/logs/update
+Quantum Deployment Manual <=> https://quantum.example.com/deployment/manual
+Nebula Integration Overview <=> https://nebula.example.com/integration/overview
+Starlight Configuration Settings <=> https://starlight.example.com/settings/config
+Lunar API Reference <=> https://lunar.example.com/api/reference
+Solar Markdown Tutorial <=> https://solar.example.com/tutorial/markdown
+Galaxy Developer Guide <=> https://galaxy.example.com/guide/developer
+Cosmos Project Readme <=> https://cosmos.example.com/project/readme
